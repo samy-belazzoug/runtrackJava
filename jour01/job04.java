@@ -7,5 +7,6 @@ class job04 {
 
         int nombre = carre.nextInt();
         System.out.println(nombre + "² = " + nombre*nombre);
+        carre.close();
     }
 }
