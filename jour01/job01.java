@@ -1,5 +1,4 @@
-public class job01 {
-    
+class job01 {
     public static void main(String[] args) {
         System.out.println("Hello World! I am coming back!");
         char c = 'S';
@@ -11,5 +10,4 @@ public class job01 {
         System.out.println("Si TOTO = 3.817, alors il y aura une erreur de compilation (lossy conversion from double to int)");
         System.out.println(TOTO);
     }
-
 }
