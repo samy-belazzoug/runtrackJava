@@ -2,10 +2,11 @@ import java.util.Scanner;
 
 class job02 {
     public static void main(String[]args) {
-        Scanner myObj = new Scanner(System.in); //Create Scanner object
-        System.out.print("Saisissez une saisie : "); //print to not jump lines 
+        Scanner prenom = new Scanner(System.in);
+        System.out.print("Entrez un prénom : ");
 
-        String userName = myObj.nextLine(); //Read input
-        System.out.println("You just said : " + userName); //Output user input
+        String prenomInput = prenom.nextLine();
+        System.out.println("bonjour " + prenomInput);
+        prenom.close();
     }
 }
