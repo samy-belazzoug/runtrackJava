@@ -1,0 +1,5 @@
+...println(x.a); = Correct
+...println(y.c); = Faux
+...println(z.b); = Correct
+...println(v.c); = Faux
+...println(w.a); = Correct
