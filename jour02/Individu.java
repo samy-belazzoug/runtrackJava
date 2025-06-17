@@ -1,3 +1,5 @@
+package runtrackJava.jour02;
+
 class Individu {
     public String nom;
     public String prenom;

@@ -1,8 +1,3 @@
-Le type d'attribut permet de gérer l'accéssibilité
-d'une méthode, classe ou attribut.
-
-On a trois types d'attributs : 
-
--public : accessible pour tous
--protected : accès limité à certains
--private : pas accessible depuis l'éxterieur
+Alors non, le code ne va pas marcher..
+C'est à la toute dernière instruction, on demande d'afficher la variable
+"toto" alors qu'elle n'existe pas. t1 ou t2 par contre existent !

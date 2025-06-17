@@ -1,0 +1,8 @@
+Le type d'attribut permet de gérer l'accéssibilité
+d'une méthode, classe ou attribut.
+
+On a trois types d'attributs : 
+
+-public : accessible pour tous
+-protected : accès limité à certains
+-private : pas accessible depuis l'éxterieur
