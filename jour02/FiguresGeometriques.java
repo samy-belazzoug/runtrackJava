@@ -104,3 +104,10 @@ class Cercle {
     }
 
 }
+
+class CercleColor extends Cercle {
+    public CercleColor(int x, int y, int rayon, int color) {
+        super(x,y,rayon);
+        int colorCercle = color;
+    }
+}
