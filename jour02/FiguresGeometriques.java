@@ -46,6 +46,13 @@ class Rectangle {
 
 }
 
+class RectangleColor extends Rectangle {
+    public RectangleColor(int longueur, int largeur, int color) {
+        super(longueur,largeur);
+        int colorRect = color;
+    }
+}
+
 class Cercle {
     private double x;
     private double y;
