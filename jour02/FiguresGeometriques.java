@@ -19,11 +19,32 @@ public class FiguresGeometriques {
     }
 }
 
-class Rectangle {
+class Figure {
+    double x;
+    double y;
+    
+    public Figure(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public void affiche() {
+        System.out.println("Coordonnées du centre : (" + this.x + "," + this.y + ")");
+    }
+
+    public void setCentre(double newX, double newY) {
+        this.x = newX;
+        this.y = newY;
+    }
+
+}
+
+class Rectangle extends Figure {
     private double largeur;
     private double longueur;
 
-    public Rectangle(double largeur,double longueur) {
+    public Rectangle(double largeur,double longueur,double x, double y) {
+        super(x,y);
         this.largeur = largeur;
         this.longueur = longueur;
     }
@@ -47,18 +68,19 @@ class Rectangle {
 }
 
 class RectangleColor extends Rectangle {
-    public RectangleColor(int longueur, int largeur, int color) {
-        super(longueur,largeur);
+    public RectangleColor(double longueur, double largeur, double x, double y, int color) {
+        super(longueur,largeur,x,y);
         int colorRect = color;
     }
 }
 
-class Cercle {
+class Cercle extends Figure{
     private double x;
     private double y;
     private double rayon;
 
     public Cercle(double x,double y, double rayon) {
+        super(x,y);
         this.x = x;
         this.y = y;
         this.rayon = rayon;
@@ -103,11 +125,4 @@ class Cercle {
         rayon = newRayon;
     }
 
-}
-
-class CercleColor extends Cercle {
-    public CercleColor(int x, int y, int rayon, int color) {
-        super(x,y,rayon);
-        int colorCercle = color;
-    }
 }
